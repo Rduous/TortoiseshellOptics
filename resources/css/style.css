@@ -55,6 +55,10 @@ nav {
   height: 1.5rem;
 }
 
+.logo span {
+  margin: 1rem;
+}
+
 nav span {
   margin: 1rem 1rem;
 }
@@ -169,7 +173,11 @@ footer img {
   }
 }
 
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 620px) {
+
+  .detail p, .service span{
+    font-size: 0.77rem;
+  }
 
   header {
     top: 2rem;
@@ -180,6 +188,11 @@ footer img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .banner {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .logo span {
@@ -204,7 +217,28 @@ footer img {
     position: static;
   }
 
+  .detail {
+    margin-top: 0;
+    margin-bottom: 4rem;
+    width: 100%;
+  }
+
+  .detail .title {
+    width: 100%;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .detail p {
+    width: 90%;
+    position: relative;
+    left: 1rem;
+  }
+
   footer span {
     display: none;
+  }
+
+  footer img {
+    margin: 0;
   }
 }
