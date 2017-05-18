@@ -77,8 +77,8 @@ nav a,span {
 /* Services section */
 .services {
   justify-content: center;
-  flex-direction: row;
-  margin: 3rem 0;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .service {
