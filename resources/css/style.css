@@ -16,7 +16,6 @@ body {
 .flex {
   flex-direction: row;
   display: flex;
-  width: 960px;
   margin: auto;
 }
 
@@ -24,6 +23,7 @@ header {
   background-image: url("../images/glasses-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
     width: 100%;
   height: 31rem;
 }
@@ -34,10 +34,15 @@ header {
   align-items: center;
   position: relative;
   top: 1rem;
+  min-height: 3rem;
 }
 
 nav {
   margin-right: 1rem;
+}
+
+.dropdown {
+  display: none;
 }
 
 .logo {
@@ -50,12 +55,8 @@ nav {
   height: 1.5rem;
 }
 
-nav a,span {
+nav span {
   margin: 1rem 1rem;
-}
-
-.dropdown {
-  display: none;
 }
 
 .motto-holder {
@@ -133,4 +134,77 @@ footer img {
   margin-left: 4rem;
   margin-right: 1rem;
   height: 1.5rem;
+}
+/* The biggest version */
+@media only screen and (min-width: 800px) {
+  .flex {
+    max-width: 960px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    top: 3rem;
+    height: 22rem;
+  }
+
+  .banner {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+  }
+
+  .flex {
+    width: 100%;
+  }
+
+  .motto-holder {
+    top: 8rem;
+  }
+
+  .motto {
+    right: 2rem;
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+
+  header {
+    top: 2rem;
+    height: 17rem;
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  .dropdown {
+    display: inline;
+  }
+
+  .link {
+    display: none;
+  }
+
+  .motto-holder {
+    top: 12rem;
+  }
+
+  .motto {
+    width: 100%;
+    text-align: center;
+    position: static;
+  }
+
+  footer span {
+    display: none;
+  }
 }
