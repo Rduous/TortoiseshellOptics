@@ -183,6 +183,7 @@ footer img {
   header {
     top: 2rem;
     height: 17rem;
+    background-position: 20%;
   }
 
   .flex {
@@ -217,10 +218,6 @@ footer img {
   .motto-holder {
     top: 12rem;
   }
-
-  /*.services {
-    3.77rem;
-  }*/
 
   .service {
     justify-content: flex-start;
