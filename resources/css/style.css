@@ -113,6 +113,7 @@ nav span {
 /* Data section */
 .details {
   justify-content: center;
+  text-align: justify;
 }
 .detail {
   width: 35%;
@@ -207,14 +208,30 @@ footer img {
     display: none;
   }
 
-  .motto-holder {
-    top: 12rem;
-  }
-
   .motto {
     width: 100%;
     text-align: center;
     position: static;
+  }
+
+  .motto-holder {
+    top: 12rem;
+  }
+
+  /*.services {
+    3.77rem;
+  }*/
+
+  .service {
+    justify-content: flex-start;
+    width: 11rem;
+    height: auto;
+    margin: 0.77rem;
+    text-align: center;
+  }
+
+  .service-logo {
+    margin-bottom: 1rem;
   }
 
   .detail {
